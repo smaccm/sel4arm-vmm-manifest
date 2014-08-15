@@ -43,7 +43,7 @@
 <project name="libsel4simple-stable.git" path="libs/libsel4simple-stable"/>
 <project name="libplatsupport.git" path="libs/libplatsupport"/>
 <project name="libutils.git" path="libs/libutils"/>
-<project name="libsel4twinkle.git" path="libs/libsel4twinkle"/>
+<project name="libsel4twinkle.git" path="libs/libsel4twinkle" remote="smaccm"/>
 <project name="libsel4arm-vmm.git" path="libs/libsel4arm-vmm" remote="smaccm"/>
 
 <project name="sel4arm-vmm.git" path="projects/sel4arm-vmm" remote="smaccm">
