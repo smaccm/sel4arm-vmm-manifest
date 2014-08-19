@@ -17,7 +17,7 @@ To build and then run Linux in a virtual machine on seL4 on the ARM-based Odroid
 
 ## Run
 
-See instructions in [HARDWARE.md](https://github.com/smaccm/camkes-smaccm-manifest/HARDWARE.md) to run on an Odroid-XU
+See instructions in [HARDWARE.md](https://github.com/smaccm/camkes-smaccm-manifest/blob/master/HARDWARE.md) to run on an Odroid-XU
 
 Once the system boots into Linux, you can log in using either:
 
