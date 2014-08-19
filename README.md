@@ -5,6 +5,10 @@ Top level repo for ARM based seL4 VMM.
 
 To build and then run Linux in a virtual machine on seL4 on the ARM-based Odroid-XU, do the following:
 
+## Prerequisites
+
+Please make sure you have the seL4 prerequisites as described in http://sel4.systems/Download.
+
 ## Checkout
     mkdir sel4arm-vmm
     cd sel4arm-vmm
