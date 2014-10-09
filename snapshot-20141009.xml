@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://github.com/seL4/" name="seL4"/>
+  <remote fetch="." name="smaccm"/>
+  
+  <default remote="seL4" revision="master"/>
+  
+  <project name="common-tool.git" path="tools/common" revision="9ebf704c47a7a564829483fdf6e22b16a3846b4d" upstream="master"/>
+  <project name="elfloader-tool.git" path="tools/elfloader" revision="b14fedcc6967dba98ad34200a9ae72708b733aa2" upstream="master"/>
+  <project name="kbuild-tool.git" path="tools/kbuild" revision="820f7efb4fbceeb1d0223f48f34dacfe8378cfdb" upstream="master"/>
+  <project name="libcpio.git" path="libs/libcpio" revision="e0c1c9a0841b99277dea467d50bd2e83ad7a6989" upstream="master"/>
+  <project name="libelf.git" path="libs/libelf" revision="34b957883b281e6b32f2fa5bb19198306a77dda7" upstream="master"/>
+  <project name="libmuslc.git" path="libs/libmuslc" revision="a576a98790b9280564daf0ca2defe98c67b6f48c" upstream="master"/>
+  <project name="libplatsupport.git" path="libs/libplatsupport" revision="611513dacbe761bb4e86bb258178404d928f7f0f" upstream="master"/>
+  <project name="libsel4allocman.git" path="libs/libsel4allocman" revision="a22f1ecb96d636a8c72901dbafa3bfe6a68c76fc" upstream="master"/>
+  <project name="libsel4arm-vmm.git" path="libs/libsel4arm-vmm" remote="smaccm" revision="d32a9a936e69e8108cbaf9025e54dd5ae7450acf" upstream="master"/>
+  <project name="libsel4muslcsys.git" path="libs/libsel4muslcsys" revision="cd42555e5069e8361662bc314a65eb6f0b6f3674" upstream="master"/>
+  <project name="libsel4platsupport.git" path="libs/libsel4platsupport" revision="347e3e3e783d751aa33d51a165a5fc977e02f27b" upstream="master"/>
+  <project name="libsel4simple-default.git" path="libs/libsel4simple-default" revision="e3c4fd27fb3d675fefe4aa32274c7f1c48e7d4a2" upstream="master"/>
+  <project name="libsel4simple-stable.git" path="libs/libsel4simple-stable" revision="91f0ec657d7a81876df60d6c1ffceeff5ed8c00c" upstream="master"/>
+  <project name="libsel4simple.git" path="libs/libsel4simple" revision="7f60b9be2673520ec71a5c270a7726286a5f93d0" upstream="master"/>
+  <project name="libsel4test.git" path="libs/libsel4test" revision="1750ec21f8e5675c2db13f388932cf8d8bbd5949" upstream="master"/>
+  <project name="libsel4twinkle.git" path="libs/libsel4twinkle" remote="smaccm" revision="5b1577d3b11c9e36851b09619bde636490e250a9" upstream="master"/>
+  <project name="libsel4utils.git" path="libs/libsel4utils" revision="d285dafd8a3ecd629683a685bf424eac24eaf200" upstream="master"/>
+  <project name="libsel4vka.git" path="libs/libsel4vka" revision="cad2a21146a1678a1133f84f935ea685a1a0e443" upstream="master"/>
+  <project name="libsel4vspace.git" path="libs/libsel4vspace" revision="742bd59cd2bff3eaa4d0d12aa4a01d1b0d873707" upstream="master"/>
+  <project name="libutils.git" path="libs/libutils" revision="e234cc3847a0eebddefabc75c8ae2dfd033862db" upstream="master"/>
+  <project name="odroid-3.14.y-linaro.git" path="projects/linux" remote="smaccm" revision="7afb9b5d1667da0e4c344f010af7c459d6b2ac91" upstream="odroid-3.14.y-linaro"/>
+  <project name="seL4.git" path="kernel" remote="smaccm" revision="911d135e2f9bcf8248e5fc55da7c929d740852e9" upstream="arm_hyp"/>
+  <project name="sel4arm-vmm.git" path="projects/sel4arm-vmm" remote="smaccm" revision="029e9aafae8ed99930ca154b27dc1c0201db754d" upstream="master">
+    <linkfile dest="Makefile" src="Makefile"/>
+    <linkfile dest="Kbuild" src="Kbuild"/>
+    <linkfile dest="Kconfig" src="Kconfig"/>
+    <linkfile dest="configs" src="configs"/>
+    <linkfile dest="apps/linux" src="apps/linux"/>
+    <linkfile dest="apps/sel4arm-vmm" src="apps/sel4arm-vmm"/>
+    <linkfile dest="libs/libsel4" src="../../kernel/libsel4"/>
+    <linkfile dest="apps/linux/linux" src="../../projects/linux"/>
+  </project>
+</manifest>
